@@ -13,12 +13,12 @@ export default function App(){
   if(data) {
 
     return(
-      <div class="table-responsive">
-          <div id="filter"></div>
+      <div className="table-responsive">
+      <div id="filter"></div>
           
-          <table class="table table-bordered table-dark table-hover table-condensed">
+          <table className="table table-bordered table-dark table-hover table-condensed">
           <thead>
-            <tr class="table-danger">
+            <tr className="table-danger">
           <th> project_id </th>
           <th> project_code </th>
           <th> description </th>
@@ -26,15 +26,17 @@ export default function App(){
           <th> end_date </th>
           <th> company_name </th>
           <th> 
-          <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                 status  <span class="caret"></span>
+          <div className="dropdown">
+              <button className="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                 status  <span className="caret"></span>
               </button>
-              <ul class="dropdown-menu">
-              <li><a href="#">Completed</a></li>
-                  <li><a href="#">In Progress</a></li>
-              </ul>
-          </div>
+              <ul className="dropdown-menu">
+              <li><a href="button">Completed</a></li>
+              <li><a href="button">Completed</a></li>
+            
+
+              </ul> 
+              </div>
           </th>
           </tr>
         </thead>
